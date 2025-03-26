@@ -1,7 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
-import { motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
