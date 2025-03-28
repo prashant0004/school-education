@@ -76,9 +76,9 @@ const Testimonials = () => {
 
                 <div className="overflow-hidden  max-w-[1000px]">
                     <div className="flex transition-transform duration-500 py-2 ease-in-out"
-                        style={{ transform: `translateX(-${currentIndex * (20 / visibleCards)}%)`, width: `${CrouselContent.length * (100 / visibleCards)}%` }}>
+                        style={{ transform: `translateX(-${currentIndex * (20 / visibleCards)}%)`, width: `${CrouselContent.length * (100 / visibleCards)}%` ,animation: "scroll 1s linear infinite"}}>
                         {CrouselContent.map((data) => (
-                            <div key={data.id} className="bg-[white] max-w-[300px] border-[3px] p-[20px] rounded-[10px] mx-2 flex-shrink-0"
+                            <div key={data.id} className="bg-[white] max-w-[300px] border-[3px] p-[20px]  rounded-[10px] mx-2 flex-shrink-0"
                                 style={{ boxShadow: "4px 4px 0px black", width: `calc(50% / ${visibleCards})` }}>
                                 <div className="flex justify-center">
                                     <img src={data.img} className="bg-[#FFF5F0] p-3 rounded-full " />

@@ -44,12 +44,12 @@ const Navbar = () => {
                     className="overflow-hidden  bg-white"
                 >
                     <ul className="flex flex-col lg:hidden space-y-4 p-4">
-                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/">Home</Link></li>
-                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/about">About Us</Link></li>
-                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/academics">Academics</Link></li>
-                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/admission">Admissions</Link></li>
-                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/students">Student Life</Link></li>
-                        <li className="p-5 border-b-2 text-center bg-[#FFAE80] hover:bg-[#FFEFE5] border-black"><Link to="/contact">Contact</Link></li>
+                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/" onClick={() => setIsOpen(false)}>Home</Link> </li> 
+                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/about" onClick={() => setIsOpen(false)}>About Us</Link></li>
+                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/academics" onClick={() => setIsOpen(false)}>Academics</Link></li>
+                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/admission" onClick={() => setIsOpen(false)}>Admissions</Link></li>
+                        <li className="p-5 border-b-2 text-center hover:bg-[#FFEFE5] border-black"><Link to="/students" onClick={() => setIsOpen(false)}>Student Life</Link></li>
+                        <li className="p-5 border-b-2 text-center bg-[#FFAE80] hover:bg-[#FFEFE5] border-black"><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
                     </ul>
                 </motion.div>
 
